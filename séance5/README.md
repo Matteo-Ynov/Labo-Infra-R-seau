@@ -4,17 +4,17 @@
   - [Émulation 3D multi machine](https://romain-ynov.notion.site/Projet-Infra-mulation-3D-multi-machine-Container-ou-virtu-14b2a83de2c848c1ba182311e5031271)
   
 ## Outils utilisés : 
-- SSH
 - Python
-- Bash scripting
+- Socket
 
 ## Compte rendu :
-- Configuration des différents émulateurs afin qu'ils démarrent en plein écran.
-- Ecriture des commandes permettant de lances les émulateurs avec un jeu spécifique
-- Setup du SSH sur les 3 machines
-- Connexion en SSH au machine puis tentative de lancement des émulateurs via SSH ( echec )
-- Tentative d'execution d'un script bash lancant les émulateurs depuis SSH ( echec )
-- Idée : envoyez une requete à l'ip de la machine qui executerait la commande de lancement lors de la réception ?
+- Essai infructueux de régler les problèmes SSH ne permettant pas le lancement d'application GUI depuis ce dernier
+- Réussite du lancement d'émulateur via machine hôte grâce à un serveur python tournant sur les différentes machines virtuels et un client envoyant les requêtes depuis la machine hôte.
+- Création rapide d'un launcher avec Pygame
+- Idée : pouvoir afficher une liste des jeux sur le launcher afin de décider quel ROM lancer.
 
 ## Sources utilisés :
-Beaucoup trop de sites et on sait tous que tu vas pas les voir donc je m'épargne cette tâche
+- le github de Face The AI
+- Dall-E 2 ( j'ai généré des images de chien )
+- Shrek 3
+- [Ce pelo a qui j'ai péta le code du socket](https://www.thepythoncode.com/article/make-a-chat-room-application-in-python)
